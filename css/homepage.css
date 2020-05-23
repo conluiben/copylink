@@ -1,0 +1,77 @@
+/* homepage only */
+div.contentBox{
+	display: flex;
+	height: 100vh;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+div#titleBox{
+	flex-direction: row;
+	/* background-color: orange; */
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Wallpaper2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; /* adjust accordingly; 2nd parameter is center by default */
+	background-attachment: fixed;
+}
+
+div#titleBox  i{
+	font-size: 2em;
+}
+div#titleBox > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+div#titleBox > div.iconBox{
+	display: flex;
+	justify-content: center;
+	align-self: stretch;
+	width: 10%;
+}
+div#titleBox > div.iconBox:hover{
+	background-color: rgb(0,0,0,0.3);
+}
+div#titleBox > div#contentText{
+	padding: 40px;
+	width: 80%;
+	align-self: center;
+	/* background-color: rgb(0,0,0,0.7); */
+	color: white;
+}
+div#titleBox > div#contentText  button{
+	/* width: 20%; */
+	padding: 10px 25px;
+	font-size: 1.25em;
+	border-radius: 40px;
+}
+div#titleBox  h1{
+	font-size: 5em;
+	font-weight: 400;
+}
+div#titleBox  p#titleDescription{
+	margin: 0 auto 40px;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+/* ----- */
+div#aboutBox{
+	background-color: #902923;
+	/* background: linear-gradient(rgba(144, 41, 35, 1), rgba(255, 255, 255, 1)); /* to add a picture, add: ", url(<url_to_pic>)" */
+	color: #d6dbc9;
+	padding: 3% 7%;
+	height: 100vh;
+}
+div.contentBox hr{ /* ALL <hr/> */
+	width: 20%;
+    border: solid 2px #b9baa3;
+}
+div.contentBox  h2{
+	font-size: 2.5em;
+	font-weight: 400;
+}
